@@ -1,0 +1,122 @@
+
+.footer_main {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    border-top: 1px solid #f168c8;
+    box-shadow: 0.1px -0.1px 9px #f76cf0, -0.1px 0.1px 1px #e66cf4;
+    margin-top: 40px;
+ 
+}
+
+.footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer_section h4 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    color: black;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.footer_section h4 a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_section h4 a:hover {
+    color: #f168c8;
+}
+
+.social_icons a {
+    color: #666;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social_icons a:hover {
+    color: #007bff;
+}
+
+.footer_bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.footer_bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer_section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer_section ul li {
+    margin-bottom: 8px;
+}
+
+.footer_section ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_section ul li a:hover {
+    color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_section {
+        margin: 10px 0;
+    }
+
+    .social_icons {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_section h4 {
+        font-size: 1rem;
+    }
+
+    .social_icons a {
+        margin: 0 5px;
+        font-size: 1.2rem;
+    }
+
+    .footer_bottom p {
+        font-size: 0.8rem;
+    }
+}

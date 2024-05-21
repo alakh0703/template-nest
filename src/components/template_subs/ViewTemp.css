@@ -1,0 +1,171 @@
+/* Main container for view template */
+.viewtemp-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.hide {
+    display: none;
+}
+
+/* Overlay to close view on click */
+.viewtemp-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Container for template content */
+.viewtemp-container {
+    background: #fff;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 1001;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close button */
+.viewtemp-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Content layout */
+.viewtemp-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Template preview */
+.viewtemp-template-preview {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.viewtemp-template-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Template details */
+.viewtemp-template-details {
+    text-align: center;
+}
+
+.viewtemp-template-details h2 {
+    margin: 10px 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.viewtemp-template-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Categories */
+.viewtemp-template-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.viewtemp-category-tag {
+    background: #f168c8;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+/* Recommended mark */
+.viewtemp-recommended-mark {
+color: #f168c8;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Download button */
+.viewtemp-download-button {
+    color: #f168c8;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    border: 1px solid #f168c8;
+}
+
+
+.viewtemp-download-button:hover {
+    background-color: #d557a6;
+    color: #fff;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .viewtemp-container {
+        width: 90%;
+    }
+
+    .viewtemp-template-preview {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .viewtemp-template-preview {
+        height: 300px;
+    }
+}
+
+
+@-webkit-keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

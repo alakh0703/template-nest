@@ -1,0 +1,291 @@
+/* Container for the entire template page */
+.template_main {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header section with a title and subtitle */
+.template_header {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Animation for header elements */
+.template_header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.template_header p {
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.new_templates {
+    font-size: 1rem;
+    color: #f88222;
+    animation: fadeIn 2s ease-in-out;
+    
+}
+
+/* Keyframes for animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Filter section with animations */
+.template_filter_parent {
+    width: 100%;
+    display: flex;
+justify-content: center;
+    align-items: center;
+}
+.template_filter {
+    width: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    
+}
+
+.filter_top {
+    display: flex;
+    justify-content: space-between;
+}
+.filter_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+    animation: fadeInUp 1s ease-in-out;
+    margin-right: 50px;
+}
+.filter_bottom_bottom {
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+.checkbox_label {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_item label {
+    margin-bottom: 5px;
+}
+
+.filter_item input[type='checkbox'] {
+    opacity: 0;
+    position: absolute;
+}
+
+/* Custom checkbox design */
+.checkmark {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.filter_item input[type='checkbox']:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.filter_item input[type='checkbox']:checked ~ .checkmark {
+    background-color: #f168c8;
+}
+
+/* Keyframes for filter item animations */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* List section to display templates (do not touch) */
+.template_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .template_header h1 {
+        font-size: 2rem;
+    }
+    .template_header p {
+        font-size: 1rem;
+    }
+    .template_filter {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .filter_item {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .template_header h1 {
+        font-size: 1.5rem;
+    }
+    .template_header p {
+        font-size: 0.9rem;
+    }
+}
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown select {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 30px 8px 10px;
+    font-size: 1rem;
+    color: #333;
+    width: 200px;
+    cursor: pointer;
+}
+
+.custom-dropdown .dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    pointer-events: none;
+}
+
+.filter_buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apply-button{
+    background-color: #f168c8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.reset-button {
+    background-color: #f59cda;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+.apply-button:hover, .reset-button:hover {
+    background-color: #d257b6;
+}
+@media screen and (max-width: 1358px) {
+    .template_filter {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 840px) {
+    .template_filter {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .filter_buttons {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 590px) {
+   .filter_top {
+         flex-direction: column;
+         gap: 10px;
+   }
+}

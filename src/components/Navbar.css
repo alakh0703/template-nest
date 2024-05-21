@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.navbar_main {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    border-bottom: 1px solid #f168c8;
+    box-shadow:  0.1px 0.1px 9px #f76cf0,
+             -0.1px -0.1px 1px #e66cf4;
+}
+.navbar_logodiv {
+    width: 20%;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+.navbar_logo {
+    width: 100px;
+    cursor: pointer;
+}
+.navbar_links {
+    display: flex;
+    width: 60%;
+ 
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navbar_link {
+    text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2px;
+}
+.navbar_link:after {
+    font-size: 1rem;
+    cursor: pointer;
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #080606;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar_link:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+.navbar_profile {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    align-items: center;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.navbar_hamburger {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.label_check{
+    display:flex;
+     flex-direction:column;
+     width:50px;
+     cursor:pointer;
+   }
+   
+.cs{
+     background: #9a9191;
+     border-radius:10px;
+     height:3px;
+     margin: 5px 0;
+     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   
+   }
+   
+   
+   .check_span{
+     width:50%;
+     
+   }
+   
+   .check_span2{
+     width:100%;
+   }
+   
+   
+   .check_span3{
+     width:75%;
+    
+   }
+   
+   
+   input[type="checkbox"]{
+     display:none;
+   }
+   
+   
+   input[type="checkbox"]:checked ~ .check_span{
+     transform-origin:bottom;
+     transform:rotatez(45deg) translate(8px,0px)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ .check_span2{
+     
+     transform-origin:top;
+     transform:rotatez(-45deg)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ .check_span3{
+     
+     transform-origin:bottom;
+     width:60%;
+     transform: translate(13px,-11px) rotatez(45deg);
+   
+   }
+
+@media screen and (max-width: 768px) {
+    .navbar_links {
+        display: none;
+    }
+    .navbar_profile {
+        display: none;
+    }
+    .navbar_hamburger {
+        display: flex;
+    }
+    .navbar_profile {
+        width: 50%;
+    }
+    .navbar_main  {
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+}
+
+
+
+.upsale-button {
+  position: relative;
+  z-index: 0;
+  height: 40px;
+  overflow: hidden;
+  border: none !important;
+  padding: 0 !important;
+  background: #f0f0f4 !important;
+  color: #656565;
+  background: white;
+  border-radius: 8px;
+  width: 100px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 4px 50px 0 rgb(0 0 0 / 7%);
+  transition: .2s all linear;
+  text-decoration: initial;
+}
+
+.upsale-button span{
+  position: relative;
+  z-index: 1;
+  height: calc( 100% - 4px );
+  width: calc( 100% - 4px );
+  top: 2px;
+  left: 2px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  color: rgb(250, 9, 198);
+  background: #f5f5f6;
+  font-weight: 600;
+}
+.upsale-button span:hover {
+  color: white;
+  background: rgb(249, 107, 218);
+}
+.upsale-button:after{
+ content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(90deg, rgba(236, 17, 225, 0.989)    0%, rgba(255,255,255,1) 50%, rgb(255, 3, 230) 100%);
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+
+
+@-webkit-keyframes rotate {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+      transform: rotate(360deg);
+  }
+}

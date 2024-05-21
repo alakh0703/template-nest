@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.contact_main {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact_left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact_left img {
+    max-width: 100%;
+    border-radius: 10px;
+    mask-image: radial-gradient(circle, rgb(245, 3, 3), transparent);
+}
+
+
+.contact_right {
+    flex: 1.5;
+    padding: 40px 30px;
+}
+
+.contact_title h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form input, .contact_form textarea {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact_form input:focus, .contact_form textarea:focus {
+    border-color: #f168c8;
+}
+
+.contact_form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact_button {
+    text-align: center;
+}
+
+.contact_button button {
+    background-color: #f168c8;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact_button button:hover {
+    background-color: #e056ab;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact_container {
+        flex-direction: column;
+    }
+
+    .contact_left, .contact_right {
+        padding: 20px;
+    }
+
+    .contact_left {
+        display: none; /* Hide image section on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact_title h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact_form input, .contact_form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contact_button button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
