@@ -5,55 +5,51 @@ import Accordion from './faq_subs/Accordian';
 function FAQ() {
     const [questions, setQuestions] = useState([
         {
-            question: 'Are the templates accredited?',
-            answer: 'Our templates are sourced from various professionals and enthusiasts. While they are crafted with care and expertise, they do not come with formal accreditation. For specific requirements, please verify with your respective institutions or organizations.'
-        },
-        {
-            question: 'Are there any licensing issues with using the logos or images?',
-            answer: 'We take licensing issues very seriously. All logos and images used in our templates are either sourced from public domains, licensed appropriately, or contributed by users who hold the rights. If you believe there is an infringement, please contact us via the contact form.'
-        },
-        {
-            question: 'How are these templates collected?',
-            answer: 'Our templates are collected through multiple channels, including user submissions, internet resources, and contributions from volunteers. We ensure each template is reviewed for quality and relevance before being made available to you.'
+            question: 'How are templates collected?',
+            answer: 'Templates are sourced voluntarily by individuals or collected from the public domain. If you encounter any issues with a template, please fill out our contact form.'
         },
         {
             question: 'Is my payment secure?',
-            answer: 'Yes, your payment is secure. We use Stripe for processing payments, which is a highly secure and trusted payment gateway. We do not store or have access to your payment details.'
+            answer: 'Yes, your payment is securely processed through Stripe. We do not collect or have access to your payment information.'
         },
         {
             question: 'What should I do if I face any issues?',
-            answer: 'If you encounter any issues, please reach out to us via the contact form on our website. Our support team will assist you in resolving your concerns promptly.'
+            answer: 'If you encounter any issues on the website or have any other concerns, please contact us through our contact form.'
         },
         {
-            question: 'Can I contribute my own templates?',
-            answer: 'Absolutely! We welcome contributions from our users. If you have a template that you think could benefit others, please submit it through our template submission form.'
+            question: 'Can I contribute my own template?',
+            answer: 'Certainly! You can email us at template-nest@gmail.com to contribute your own template.'
         },
         {
             question: 'How do I know the templates are of good quality?',
-            answer: 'Each template goes through a review process to ensure it meets our quality standards. However, since they are sourced from various contributors, we recommend reviewing and customizing them to fit your specific needs.'
+            answer: 'Template Nest does not claim a guarantee of the quality of templates. These templates are provided for your use, and we encourage you to recommend them to your friends if you find them useful.'
         },
         {
             question: 'Are there any additional fees or hidden charges?',
-            answer: 'No, there are no additional fees or hidden charges. The price you see is the price you pay. We believe in transparent pricing.'
+            answer: 'No, there are no additional fees or hidden charges. The premium membership fee is $4.99 for a lifetime, and there are no charges before or after that.'
         },
         {
             question: 'Can I get a refund if I am not satisfied with a template?',
-            answer: 'Yes, we offer a satisfaction guarantee. If you are not satisfied with a template, please contact us within 30 days of your purchase, and we will process a refund for you.'
+            answer: 'Unfortunately, refunds are not available. However, if you encounter any issues with accessing templates on the website after payment, please contact us.'
         },
         {
             question: 'How often are new templates added?',
-            answer: 'We strive to add new templates regularly. Our goal is to keep our library fresh and relevant to meet the diverse needs of our users. Stay tuned for updates!'
+            answer: 'New templates are added every week to keep our library fresh and relevant for our users.'
+        },
+        {
+            question: 'How can I contact Template Nest?',
+            answer: 'You can contact us by filling out the form (click on Contact on the navbar) or via email at template-nest@gmail.com.'
         }
     ]);
+
     return (
         <div className='faq_main'>
             <h1>Frequently Asked Questions</h1>
             {questions.map((question, index) => (
                 <Accordion key={index} question={question.question} answer={question.answer} />
             ))}
-
         </div>
     )
 }
 
-export default FAQ
+export default FAQ;

@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './Template.css';
 import useTemplateStore from '../TemplateStore.js';
 
-function Template({ src, name, title, templateNumber, categories, recommended }) {
+function Template({ templateId, src, name, title, templateNumber, categories, recommended }) {
     const [selectedTemplate, setSelectedTemplates] = useState({
+        templateId: templateId,
         src: src,
         name: name,
         title: title,
@@ -26,7 +27,7 @@ function Template({ src, name, title, templateNumber, categories, recommended })
         <div className='template_card' onClick={OpenViewTemplate}>
             <div className='template_preview'>
                 <div className="pdf_overlay"></div>
-                <embed src={src} type="application/pdf" className='template_embed' />
+                <iframe src={src} type="application/pdf" scrolling='no' className='template_embed' title='resume-preview' />
             </div>
             <div className='template_info'>
                 <p className='template_name'>{name}</p>

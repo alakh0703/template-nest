@@ -1,0 +1,72 @@
+.cancel-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8d7da;
+    font-family: Arial, sans-serif;
+}
+
+.cancel-page-content {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-page-icon {
+    font-size: 64px;
+    color: #dc3545;
+    margin-bottom: 20px;
+    animation: cancel-page-shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes cancel-page-shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.cancel-page-heading {
+    color: #dc3545;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.cancel-page-message {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #666;
+}
+
+.cancel-page-explore-button, .cancel-page-retry-button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.cancel-page-explore-button {
+    background-color: #f135f1;
+    color: white;
+}
+
+.cancel-page-explore-button:hover {
+    background-color: #c11ac2;
+}
+
+.cancel-page-retry-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-page-retry-button:hover {
+    background-color: #a71d2a;
+}

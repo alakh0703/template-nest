@@ -1,0 +1,31 @@
+.profileDiv_main {
+    width: 200px;
+    position: absolute;
+    top: 102px; /* Adjust based on your navbar height */
+    right: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+}
+
+.profileDiv_main.active {
+    display: block;
+}
+
+.profileDiv_main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profileDiv_main li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.profileDiv_main li:hover {
+    background-color: #f0f0f0;
+}

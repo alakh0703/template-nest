@@ -1,0 +1,33 @@
+.credits-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.credits-container h1 {
+    margin-bottom: 20px;
+}
+.credits-link {
+    display: inline-block;
+    background-color: #fdfeff;
+    color: #fc0cf0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    border: 1px solid #fc0cf0;
+    transition: background-color 0.3s ease;
+}
+
+.credits-link:hover {
+    background-color: #fc0cf0;
+    color: white;
+    font-weight: 600;
+}
+
+.kok {
+    margin-top: 20px;
+}

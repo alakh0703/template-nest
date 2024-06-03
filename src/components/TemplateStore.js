@@ -2,6 +2,7 @@ import { create } from "zustand";
 
 const TemplateStore = (set, get) => ({
     selectedTemplate: {
+        templateId: "",
         src: "",
         name: "",
         title: "",

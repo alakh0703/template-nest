@@ -1,0 +1,164 @@
+.profile-settings{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.profile-settings-main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 300px;   
+}
+.profile-settings-main h1 {
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+.profile-settings-get-premium {
+    width: 200px;
+    height: 40px;
+    border: 2px solid rgb(232, 7, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: rgb(230, 43, 255);
+    font-weight: 700;
+}
+.profile-settings-get-premium2 {
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgb(232, 7, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: rgb(254, 249, 255);
+    font-weight: 700;
+    background-color: rgb(206, 17, 244);
+}
+
+.profile-settings-get-premium:hover {
+    background-color: rgb(232, 7, 244);
+    color: white;
+
+}
+.profile-settings-get-premium2:hover {
+    background-color: rgb(253, 248, 253);
+    color: rgb(235, 13, 255);
+
+}
+.profile-sett-name,.profile-sett-email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.profile-sett-name p {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+.profile-sett-email p {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+
+}
+.profile-sett-email input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+.profile-sett-name input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+.profile-sett-password {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.profile-sett-password p {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.profile-sett-password input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.profile-sett-password2 {
+    font-size: 0.8rem;
+    color: rgb(4, 16, 244);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.profile-sett-password2:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.profile-sett-btns {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-sett-save {
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(206, 17, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.profile-sett-save:hover{
+    background-color: rgb(206, 17, 244);
+    color: white;
+}
+.profile-sett-delete {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(237, 90, 90);
+    border: 1px solid pink;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.profile-sett-delete:hover{
+    background-color: rgb(255, 0, 0);
+}

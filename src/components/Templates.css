@@ -289,3 +289,9 @@ justify-content: center;
          gap: 10px;
    }
 }
+
+
+.total_templates {
+    margin-bottom: 20px;
+    color: gray;
+}

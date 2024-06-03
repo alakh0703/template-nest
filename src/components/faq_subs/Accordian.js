@@ -18,7 +18,6 @@ function Accordion({ question, answer }) {
         <div className={`accordion_item ${isOpen ? 'open' : ''}`}>
             <div className="accordion_header" onClick={toggleAccordion}>
                 <h3>{question}</h3>
-                <span className="accordion_icon">{isOpen ? '-' : '+'}</span>
             </div>
             <div
                 ref={contentRef}

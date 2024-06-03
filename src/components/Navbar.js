@@ -1,15 +1,14 @@
-import "./Navbar.css"
 import React, { useState } from 'react'
+import { useUserStore } from "../Stores/UserStore"
 import logo from '../logos/logo-png.png'
+import "./Navbar.css"
+import ProfileDiv from "./navbar_subs/ProfileDiv"
 import Sidebar from "./navbar_subs/Sidebar"
-import LoginModal from "./navbar_subs/LoginModal"
 function Navbar() {
+    const { user } = useUserStore()
     const [sidebar, setSidebar] = useState(false)
-    const [loginModal, setLoginModal] = useState(false)
 
-    const showLoginModal = () => {
-        setLoginModal(!loginModal)
-    }
+
 
     const go2Home = () => {
         window.location.href = '/'
@@ -30,25 +29,29 @@ function Navbar() {
                 <a href="/templates" className="navbar_link" >TEMPLATES</a>
                 <a href="/FAQ" className="navbar_link">FAQ</a>
                 <a href="/CONTACT" className="navbar_link">CONTACT</a>
-                <a href="/ABOUT" className="navbar_link">ABOUT</a>
+                <a href="/accreditation" className="navbar_link">CREDITS</a>
 
             </div>
 
             <div className="navbar_profile">
-                {/* <div className="avatar"></div> */}
-                <a href="/login" class="upsale-button" >
-                    <span>Login</span>
-                </a>
+                {user.name === null ?
+                    <a href="/login" className="upsale-button" >
+                        <span>Login</span>
+                    </a> :
+                    <ProfileDiv />
+
+
+                }
+
             </div>
             <div className="navbar_hamburger">
-                <label for="check" className="label_check"  >
+                <label htmlFor="check" className="label_check"  >
                     <input type="checkbox" id="check" onChange={toggleSidebar} />
                     <span className="cs check_span"></span>
                     <span className="cs check_span2"></span>
                     <span className="cs check_span3"></span>
                 </label>
             </div>
-            {loginModal ? <LoginModal isOpen={showLoginModal} setIsOpen={setLoginModal} /> : null}
             {sidebar ? <Sidebar /> : null}
         </div>
     )
