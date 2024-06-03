@@ -12,6 +12,10 @@ function Success() {
         console.log(response.data);
 
     }
+
+    const go2templates = () => {
+        window.location.href = '/templates';
+    }
     useEffect(() => {
         if (!user || !user.token) {
             clearUser()
@@ -30,7 +34,7 @@ function Success() {
                 </div>
                 <h1 className="success-page-heading">Thank you!</h1>
                 <p className="success-page-message">You are now a premium user.</p>
-                <button className="success-page-explore-button">Explore Templates</button>
+                <button className="success-page-explore-button" onClick={go2templates}>Explore Templates</button>
             </div>
         </div>
     );

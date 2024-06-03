@@ -8,8 +8,8 @@ function Cancel() {
                 <div className="cancel-page-icon">&#10060;</div>
                 <h2 className="cancel-page-heading">Payment Canceled</h2>
                 <p className="cancel-page-message">We're sorry to see you go. Your payment has been canceled.</p>
-                <button className="cancel-page-explore-button" onClick={() => window.location.href = '/explore'}>Explore Templates</button>
-                <button className="cancel-page-retry-button" onClick={() => window.location.href = '/payment'}>Retry Payment</button>
+                <button className="cancel-page-explore-button" onClick={() => window.location.href = '/templates'}>Explore Templates</button>
+                <button className="cancel-page-retry-button" onClick={() => window.location.href = '/premium-payment'}>Retry Payment</button>
             </div>
         </div>
     );
