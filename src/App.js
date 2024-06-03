@@ -122,7 +122,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <DisableRightClick /> */}
+      <DisableRightClick /> 
       <RouterProvider router={router} />
       <Footer />
       <WarningModal show={isModalOpen} onClose={closeModal} />
