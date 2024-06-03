@@ -76,7 +76,7 @@ function Templates() {
 
     const fetchTemplates = async (page) => {
         try {
-            const response = await axios.get(`http://localhost:5000/template/get-templates/${page}`);
+            const response = await axios.get(`${process.env.REACT_APP_GET_TEMPLATE}/${page}`);
             const data = await response?.data.templates;
             setTemplates(data);
 
