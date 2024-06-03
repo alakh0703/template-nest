@@ -18,7 +18,7 @@ function FAQ() {
         },
         {
             question: 'Can I contribute my own template?',
-            answer: 'Certainly! You can email us at template-nest@gmail.com to contribute your own template.'
+            answer: 'Certainly! You can email us at template9nest@gmail.com to contribute your own template.'
         },
         {
             question: 'How do I know the templates are of good quality?',
