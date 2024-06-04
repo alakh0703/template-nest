@@ -25,7 +25,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer_bottom">
-                <p>&copy; 2024 TemplateHub. All rights reserved.</p>
+                <p>&copy; 2024 Template Nest. All rights reserved.</p>
             </div>
         </div>
     );
